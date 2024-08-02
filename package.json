@@ -1,0 +1,12 @@
+{
+    "name": "call-transcription",
+    "version": "1.0.0",
+    "description": "Call transcription using AWS Transcribe",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "process-transcriptions": "python src/process_transcriptions.py transcriptions processed-transcriptions"
+    },
+    "author": "Tan Yong Rui",
+    "license": "ISC"
+}
