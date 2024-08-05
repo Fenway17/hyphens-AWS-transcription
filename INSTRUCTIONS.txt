@@ -1,0 +1,2 @@
+Put all transcription json files in `transcriptions` folder to be processed into human readable format
+Output of processed transcriptions will be placed in `processed-transcriptions` folder

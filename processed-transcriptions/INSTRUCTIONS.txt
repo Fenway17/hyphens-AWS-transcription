@@ -1,1 +1,0 @@
-Output of processed transcriptions will be placed in this folder

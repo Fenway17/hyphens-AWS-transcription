@@ -1,1 +1,0 @@
-Put all transcription json files in here to be processed into human readable format
