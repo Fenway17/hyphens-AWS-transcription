@@ -18,6 +18,7 @@ Run the Script:
 
 Process the transcription json files into human readable text:
 
+-   Partial instructions in `INSTRUCTIONS.txt`
 -   Transfer JSON files to `transcriptions` folder
 -   Use `python src/process_transcriptions.py transcriptions processed-transcriptions`
     -   Alternatively, `npm run process-transcriptions`
