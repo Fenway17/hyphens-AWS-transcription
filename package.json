@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "process-transcriptions": "python src/process_transcriptions.py transcriptions processed-transcriptions"
+        "process-transcriptions": "python src/process_transcriptions.py transcriptions processed-transcriptions",
+        "upload-mongodb": "python src/upload_to_mongodb.py"
     },
     "author": "Tan Yong Rui",
     "license": "ISC"

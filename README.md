@@ -23,3 +23,12 @@ Process the transcription json files into human readable text:
 -   Use `python src/process_transcriptions.py transcriptions processed-transcriptions`
     -   Alternatively, `npm run process-transcriptions`
 -   Results will be output into `processed-transcriptions` folder
+
+Uploading the JSON files to MongoDB:
+
+-   Set up virtual environment with `python -m venv venv`
+-   Activate virtual environment with `.\venv\Scripts\activate`
+    -   Use `pip freeze > requirements.txt` to update `requirements.txt` if any new libraries are installed
+-   Install required libraries with `pip install -r requirements.txt`
+-   Run the program `python src/upload_to_mongodb.py`
+    -   Alternatively, `npm run upload-mongodb`

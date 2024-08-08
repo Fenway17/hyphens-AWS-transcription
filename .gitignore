@@ -5,6 +5,8 @@ transcription.txt
 processed-transcriptions/
 transcriptions/
 
+venv/
+
 # Logs
 logs
 *.log
