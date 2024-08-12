@@ -16,7 +16,7 @@ MONGO_CLUSTER = 'cscalltranscript.w192w6d.mongodb.net'
 DATABASE_NAME = 'transcript-json-db'
 MONGO_URI = f'mongodb+srv://{MONGO_USERNAME}:{MONGO_PASSWORD}@{MONGO_CLUSTER}/{DATABASE_NAME}?retryWrites=true&w=majority'
 COLLECTION_NAME = 'transcript-collection'
-S3_PREFIX_FOLDER = 'temp-test' # path to s3 folder
+S3_PREFIX_FOLDER = 'transcription-jan-2024' # path to s3 folder
 S3_BUCKET = 'cs-calls-transcription'
 LOCAL_DOWNLOAD_DIR = 'transcriptions' # folder to temporarily store downloaded files
 

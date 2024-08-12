@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "process-transcriptions": "python src/process_transcriptions.py transcriptions processed-transcriptions",
-        "upload-mongodb": "python src/upload_mongodb.py"
+        "upload-mongodb": "python src/upload_mongodb.py",
+        "upload-mongodb-direct": "python src/upload_mongodb_direct.py"
     },
     "author": "Tan Yong Rui",
     "license": "ISC"

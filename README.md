@@ -2,7 +2,7 @@
 
 Transcription of CS calls using AWS Transcribe
 
-## Running transcribe_folder.sh
+## Running transcribe_folder.sh to transcribe audio files
 
 Parameters:
 
@@ -22,13 +22,20 @@ Run the Script:
 -   Make the script executable (if necessary) with `chmod +x transcribe_folder.sh`
 -   Run the script with `./transcribe_folder.sh`
 
-Process the transcription json files into human readable text:
+## Process the transcription json files into human readable text
 
 -   Partial instructions in `INSTRUCTIONS.txt`
 -   Transfer JSON files to `transcriptions` folder
 -   Use `python src/process_transcriptions.py transcriptions processed-transcriptions`
     -   Alternatively, `npm run process-transcriptions`
 -   Results will be output into `processed-transcriptions` folder
+
+## Upload transcription JSON files to MongoDB
+
+Parameters:
+
+-   Edit `upload_mongodb_direct.py` script to include correct variables/parameters to the variables needed
+-   Edit `upload_mongodb.py` script to include correct variables/parameters to the variables needed
 
 Before uploading the JSON files to MongoDB:
 
@@ -42,5 +49,8 @@ Uploading the JSON files to MongoDB:
 -   Activate virtual environment with `.\venv\Scripts\activate`
     -   Use `pip freeze > requirements.txt` to update `requirements.txt` if any new libraries are installed
 -   Install required libraries with `pip install -r requirements.txt`
--   Run the program `python src/upload_to_mongodb.py`
-    -   Alternatively, `npm run upload-mongodb`
+-   Run either one of the Python scripts:
+    -   Run the script `python src/upload_mongodb_direct.py` to upload from S3 bucket to MongoDB directly
+        -   Alternatively, `npm run upload-mongodb-direct`
+    -   Run the script `python src/upload_mongodb.py` to download from S3 before uploading to MongoDB
+        -   Alternatively, `npm run upload-mongodb`
