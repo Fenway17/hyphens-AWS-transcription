@@ -2,9 +2,9 @@
 
 # Configuration
 BUCKET_NAME="cs-calls-audio"
-AUDIO_FOLDER="rawcalls-feb2024/2024-08-06T03_30_10.877Z"
+AUDIO_FOLDER="rawcalls-mar2024" # change this target folder
 OUTPUT_BUCKET="cs-calls-transcription"
-OUTPUT_FOLDER="transcription-feb-2024"
+OUTPUT_FOLDER="transcription-mar-2024" # IMPORTANT: when changing AUDIO_FOLDER, change the output folder too
 LANGUAGE_OPTIONS=("en-US" "zh-CN" "ms-MY")
 JOB_NAME_PREFIX="call-transcription-job-"
 # Currently unable to use this custom vocab as it is tied to english only

@@ -12,11 +12,11 @@ MONGO_USERNAME = os.getenv('MONGO_USERNAME')
 MONGO_PASSWORD = os.getenv('MONGO_PASSWORD')
 
 # Configuration
-MONGO_CLUSTER = 'your_cluster_url'
+MONGO_CLUSTER = 'cscalltranscript.w192w6d.mongodb.net'
 DATABASE_NAME = 'your_database_name'
 MONGO_URI = f'mongodb+srv://{MONGO_USERNAME}:{MONGO_PASSWORD}@{MONGO_CLUSTER}/{DATABASE_NAME}?retryWrites=true&w=majority'
 COLLECTION_NAME = 'your_collection_name'
-S3_PREFIX_FOLDER = 'transcription-jan-2024' # path to s3 folder
+S3_PREFIX_FOLDER = 'temp-test' # path to s3 folder
 S3_BUCKET = 'cs-calls-transcription'
 LOCAL_DOWNLOAD_DIR = 'transcriptions' # folder to temporarily store downloaded files
 
