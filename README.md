@@ -1,6 +1,6 @@
 # call-transcription
 
-Transcription of CS calls using AWS Transcribe
+Transcription of CS calls using AWS Transcribe  
 Author: Tan Yong Rui
 
 ## Running transcribe_folder.sh to transcribe audio files
