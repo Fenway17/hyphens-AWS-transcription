@@ -8,6 +8,12 @@ Parameters:
 
 -   Edit `transcribe_folder.sh` script to include correct variables/parameters to the variables needed
 
+Before running script:
+
+-   Ensure AWS is configured with correct logins
+    -   Requires AWS CLI
+    -   Use Command Prompt to access AWS through AWS CLI and login with `AWS Access Key ID` and `Secret`
+
 Run the Script:
 
 -   Open Git Bash (Requires Git to be installed)
@@ -23,6 +29,12 @@ Process the transcription json files into human readable text:
 -   Use `python src/process_transcriptions.py transcriptions processed-transcriptions`
     -   Alternatively, `npm run process-transcriptions`
 -   Results will be output into `processed-transcriptions` folder
+
+Before uploading the JSON files to MongoDB:
+
+-   Requires your IP address to be whitelisted on MongoDB's network access
+-   Requires `.env` file to contain MongoDB username and password
+    -   Created in MongoDB
 
 Uploading the JSON files to MongoDB:
 
